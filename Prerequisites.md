@@ -113,6 +113,52 @@ Alias Records
 Lets you point DNS records directly to Azure resources (e.g., public IPs, Traffic Manager, CDN).
 Automatically updates if the underlying resource’s IP changes.
 
+**LRS- 11 9s of durability**
+<img width="218" height="226" alt="image" src="https://github.com/user-attachments/assets/5de5d3dc-74f9-4e03-8775-f358061a4ed0" />
+
+**ZRS - 12 9s of durability**
+<img width="395" height="385" alt="image" src="https://github.com/user-attachments/assets/092e1055-327f-4c9b-93ef-c838c45f95c0" />
+
+**GRS - 16 9s**
+<img width="568" height="290" alt="image" src="https://github.com/user-attachments/assets/7c8ef05c-67bb-4801-9e01-d8d4d6e29e1c" />
+
+**GZRS - 16 9s**
+<img width="688" height="418" alt="image" src="https://github.com/user-attachments/assets/793ae29a-7479-4a57-baf4-07fb18106eeb" />
+
+**Azure File Movement Options**
+Azure provides several tools to help move and manage files of all sizes—from large migrations to individual file transfers. Here are the key options for smaller-scale file movement:
+**1. AzCopy**
+Type: Command-line tool
+Use cases: Upload, download, or copy files/blobs to/from Azure Storage
+Features:
+Supports file movement between storage accounts
+One-way sync (source to destination only)
+Works with other cloud providers
+Limitation: Not bi-directional; no automatic syncing based on timestamps or metadata
+**2. Azure Storage Explorer**
+Type: Graphical desktop application (Windows, macOS, Linux)
+Use cases: Visual file/blobs management
+Features:
+Upload, download, move files between storage accounts
+Uses AzCopy behind the scenes
+User-friendly GUI for managing Azure Storage
+**3. Azure File Sync**
+Type: Sync service for Windows file servers
+Use cases: Centralize and sync on-prem file shares with Azure Files
+Features:
+Bi-directional sync between Azure and on-premises
+Supports SMB, NFS, FTPS protocols locally
+Enables cloud tiering (frequently used files local, others in cloud)
+Supports multiple caches globally
+Allows quick recovery from server failure by reinstalling on a new server
+
+
+<img width="676" height="220" alt="image" src="https://github.com/user-attachments/assets/6a297e56-e73a-4ec3-90d1-dc1e89551ca9" />
+
+
+
+
+
 
 
 
